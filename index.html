@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onisa Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- MOBILE MENU -->
+  <div class="mob-menu" id="mm">
+    <span class="mob-close" onclick="closeMob()">✕</span>
+    <a onclick="go(1);closeMob()">Home</a>
+    <a onclick="go(2);closeMob()">Instructions</a>
+    <a onclick="go(3);closeMob()">About</a>
+    <a onclick="go(4);closeMob()">Graphic Design</a>
+    <a onclick="go(8);closeMob()">Illustration</a>
+    <a onclick="go(11);closeMob()">Web Design</a>
+    <a onclick="go(14);closeMob()">Contact</a>
+  </div>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a class="nav-logo" onclick="go(1)">ONISA</a>
+      <ul class="nav-links" id="nl">
+        <li><a onclick="go(1)" id="n1">Home</a></li>
+        <li><a onclick="go(3)" id="n3">About</a></li>
+        <li><a onclick="go(4)" id="n4">Graphic Design</a></li>
+        <li><a onclick="go(8)" id="n8">Illustration</a></li>
+        <li><a onclick="go(11)" id="n11">Web Design</a></li>
+        <li><a onclick="go(14)" id="n14">Contact</a></li>
+      </ul>
+
+      <!-- Header controls (visible on mobile only) -->
+      <div class="header-controls">
+        <button class="pg-a" onclick="go(p-1)"><img src="img/arrow.svg" alt=""></button>
+        <div class="pg-n">1</div>
+        <button class="pg-a" onclick="go(p+1)"><img src="img/arrow.svg" alt=""></button>
+      </div>
+
+      <div class="nav-help" onclick="go(2)" title="Instructions">?</div>
+
+      <div class="hamburger" onclick="openMob()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SIDEBAR NAV (visible on desktop only) -->
+  <div class="sidebar-nav">
+    <button class="pg-a" onclick="go(p-1)"><img src="img/arrow.svg" alt=""></button>
+    <div class="pg-n">1</div>
+    <button class="pg-a" onclick="go(p+1)"><img src="img/arrow.svg" alt=""></button>
+  </div>
+
+  <!-- ════════ PAGE 1 — HOME ════════ -->
+  <div class="page active" id="page1">
+    <div class="b1 blob"></div>
+    <div class="b2 blob"></div>
+    <div class="b3 blob"></div>
+    <div class="b4 blob"></div>
+    <div class="b5 blob"></div>
+    <div class="page-wrap">
+      <div class="home-center">
+        <div class="home-logo-ph">
+          <img src="img/logo-white.svg" alt="">
+        </div>
+        <div class="home-sub">Portfolio</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════ PAGE 2 — INSTRUCTIONS ════════ -->
+  <div class="page" id="page2">
+    <div class="page-wrap">
+      <div class="card">
+        <div class="ph-header">
+          <div class="ph-header-title">Instructions</div>
+        </div>
+        <div class="ph-body">
+          <!-- cat + intro row -->
+          <div class="in-card">
+            <img src="img/cat-ques.svg" alt="">
+            <div class="in-card-text">
+              <div class="in-title">How to navigate this portfolio</div>
+              <p class="num-text">
+                You have two ways to explore this portfolio! You can use the arrows to flip through pages one by one, or
+                for more control, use the main menu and then click the numbered dots in the top-right corner of each
+                section.
+              </p>
+            </div>
+          </div>
+
+          <!-- 4 instruction cards -->
+          <div class="g2">
+            <div class="inset">
+              <div class="num">01</div>
+              <div class="num-title">Navigation Menu</div>
+              <p class="num-text desk">
+                Click any section in the top nav. The highlighted name shows which section you're currently inside.
+              </p>
+              <p class="num-text mob">
+                Click any section in the burger menu located at the top right of the page.
+              </p>
+            </div>
+
+            <div class="inset">
+              <div class="num">02</div>
+              <div class="num-title">Prev / Next</div>
+              <p class="num-text desk">
+                The ▲ ▼ arrow buttons at the right side of the page cycle through every page in order, 1 to 14.
+              </p>
+              <p class="num-text mob">
+                The ◀ ▶ arrow buttons at the top of the page cycle through every page in order, 1 to 14.
+              </p>
+            </div>
+
+            <div class="inset">
+              <div class="num">03</div>
+              <div class="num-title">Page Number</div>
+              <p class="num-text">
+                The circle between the arrows shows the current page number out of 14 total pages.
+              </p>
+            </div>
+
+            <div class="inset">
+              <div class="num">04</div>
+              <div class="num-title">Section Switcher</div>
+              <p class="num-text">
+                Numbered dots (top-right inside a section) jump between different pieces — e.g., 1 · 2 · 3 · 4 in
+                Graphic Design.
+              </p>
+            </div>
+
+            <div class="inset">
+              <div class="num">05</div>
+              <div class="num-title">Project Tags</div>
+              <p class="num-text">
+                These tags show which software or tools were primarily used in creating each project. For example:
+              </p>
+              <div class="tags">
+                <span class="tag to" title="Adobe Illustrator">Ai</span>
+                <p class="num-text">stands for Adobe Illustrator.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="controls">
+            <div class="pg-n">2</div>
+            <div class="sec-stamp">INSTRUCTIONS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════ PAGE 3 — ABOUT ════════ -->
+  <div class="page" id="page3">
+    <div class="page-wrap">
+      <div class="card">
+        <div class="ph-header">
+          <div class="ph-header-title">About</div>
+        </div>
+        <div class="ph-body">
+          <div class="g2">
+            <!-- LEFT -->
+            <div class="col">
+              <div class="about-bio-card">
+                <div class="about-bio-text">
+                  <h2>Who is Onisa?</h2>
+                  <p>
+                    Onisa is a skilled visual designer with expertise in graphic design, illustration, and Adobe
+                    Creative Suite, backed by studies in Interactive Media Management. Adaptable and innovative, she has
+                    led teams and worked on international freelance projects, combining technical skills with strong
+                    communication to deliver high-quality results in packaging, book illustration, and beyond.
+                  </p>
+                </div>
+                <div class="about-cat-ph">
+                  <img src="img/floating-cats.svg" alt="">
+                </div>
+              </div>
+
+              <div class="inset">
+                <div class="sub-head">Experience</div>
+                <div class="exp-g">
+                  <div>
+                    <div class="et">Video Editor and Graphic Designer | TRAC</div>
+                    <div class="ed">October, 2025 – Present</div>
+                  </div>
+                  <div>
+                    <div class="et">Senior Image Specialist | Nielsen</div>
+                    <div class="ed">May, 2018 – June, 2024</div>
+                  </div>
+                  <div>
+                    <div class="et">Book Interior Designer | Freelance</div>
+                    <div class="ed">January, 2019 – May, 2024</div>
+                  </div>
+                  <div>
+                    <div class="et">Life Skills Coach | Unicef (Makani Project)</div>
+                    <div class="ed">January, 2017 – July, 2017</div>
+                  </div>
+                  <div>
+                    <div class="et">Main Designer | Whispers</div>
+                    <div class="ed">August, 2015 – December, 2016</div>
+                  </div>
+                  <div>
+                    <div class="et">Book Illustrator | Al-Rowad</div>
+                    <div class="ed">January, 2014 – April, 2014</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="col">
+              <div class="inset">
+                <div class="sub-head">Skills</div>
+                <div class="tags">
+                  <span class="tag tn" title="Adobe Photoshop">Ps</span>
+                  <span class="tag tn" title="Adobe Illustrator">Ai</span>
+                  <span class="tag tn" title="Adobe InDesign">Id</span>
+                  <span class="tag tn" title="Adobe Premiere">Pr</span>
+                  <span class="tag tn" title="Adobe After Effects">Ae</span>
+                  <span class="tag tn" title="Adobe Animate">An</span>
+                  <span class="tag tn" title="Adobe Audition">Au</span>
+                  <span class="tag ts" title="Hypertext Markup Language">HTML</span>
+                  <span class="tag ts" title="Cascading Style Sheets">CSS</span>
+                  <span class="tag ts" title="JavaScript">JS</span>
+                  <span class="tag to">Wordpress</span>
+                  <span class="tag tc">Procreate</span>
+                  <span class="tag tc">Figma</span>
+                </div>
+              </div>
+
+              <div class="inset">
+                <div class="sub-head">Education</div>
+                <div class="col" style="gap:12px;">
+                  <div>
+                    <div class="et">Interactive Media Management</div>
+                    <div class="et">Algonquin College</div>
+                    <div class="ed">Graduate Certificate | 2025</div>
+                  </div>
+                  <div>
+                    <div class="et">Visual Arts</div>
+                    <div class="et">University of Jordan</div>
+                    <div class="ed">Bachelor | 2013</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="controls">
+            <div class="sec-stamp">ABOUT</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════ PAGE 4 — GD: Personal Ad ════════ -->
+  <div class="page" id="page4">
+    <div class="page-wrap">
+      <div class="card">
+        <div class="ph-header">
+          <div class="ph-header-title">Graphic Design</div>
+          <div class="side-dots">
+            <div class="dot act" onclick="go(4)">1</div>
+            <div class="dot" onclick="go(5)">2</div>
+            <div class="dot" onclick="go(6)">3</div>
+            <div class="dot" onclick="go(7)">4</div>
+          </div>
+        </div>
+        <div class="ph-body">
+          <div class="gl">
+            <div class="col">
+              <div>
+                <div class="proj-title">Personal Ad</div>
+                <div class="proj-meta">Postcard Mailer <em>2024</em></div>
+                <p class="proj-desc">
+                  This postcard mailer showcases my funky illustration style with bold colors and
+                  playful UI elements. The design mixes digital nostalgia with fresh, vibrant energy. I had fun blending
+                  illustration with these subtle interface details to create something eye-catching and unique.
+                </p>
+                <div class="tags">
+                  <span class="tag tn" title="Adobe Photoshop">Ps</span>
+                  <span class="tag to" title="Adobe Illustrator">Ai</span>
+                </div>
+              </div>
+
+              <div class="icon">
+                <img src="img/post-mailer-theme.svg" alt="">
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="des" style="transform:rotate(-1.5deg);">
+                <img src="img/post-mailer-face.png" alt="">
+              </div>
+              <div class="des">
+                <img src="img/post-mailer-back.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="controls">
+            <div class="sec-stamp">GRAPHIC DESIGN</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════ PAGE 5 — GD: Mission to Mars ════════ -->
+  <div class="page" id="page5">
+    <div class="page-wrap">
+      <div class="card">
+        <div class="ph-header">
+          <div class="ph-header-title">Graphic Design</div>
+          <div class="side-dots">
+            <div class="dot" onclick="go(4)">1</div>
+            <div class="dot act" onclick="go(5)">2</div>
+            <div class="dot" onclick="go(6)">3</div>
+            <div class="dot" onclick="go(7)">4</div>
+          </div>
+        </div>
+        <div class="ph-body">
+          <div class="gl">
+            <div class="des">
+              <img src="img/mission-to-mars-poster.svg" alt="">
+            </div>
+
+            <div class="col">
+              <div class="icon">
+                <img src="img/Mars-Rover.svg" alt="">
+              </div>
+              <div>
+                <div class="proj-title">Mission to Mars</div>
+                <div class="proj-meta">Typographical Poster <em>2024</em></div>
+                <p class="proj-desc">
+                  This poster was a fun experiment using only glyphs to create a Mars rover, rocks,
+                  mountains, and trails. It was a challenge to see how far I could push typography to form a complete
+                  scene. I enjoyed the process of turning simple characters into something visual and meaningful.
+                </p>
+                <div class="tags">
+                  <span class="tag to" title="Adobe Illustrator">Ai</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="controls">
+            <div class="sec-stamp">GRAPHIC DESIGN</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════ PAGE 6 — GD: Books & Magazines ════════ -->
+  <div class="page" id="page6">
+    <div class="page-wrap">
+      <div class="card">
+        <div class="ph-header">
+          <div class="ph-header-title">Graphic Design</div>
+          <div class="side-dots">
+            <div class="dot" onclick="go(4)">1</div>
+            <div class="dot" onclick="go(5)">2</div>
+            <div class="dot act" onclick="go(6)">3</div>
+            <div class="dot" onclick="go(7)">4</div>
+          </div>
+        </div>
+        <div class="ph-body">
+          <div class="gr">
+            <!-- LEFT: stacked textbook pages -->
+            <div class="col">
+              <div class="image-stack">
+                <div class="ph">
+                  <img src="img/Arabic - 4th Grade - Student Book Spread_Page_21.png" alt="">
+                </div>
+                <div class="ph">
+                  <img src="img/Arabic - 4th Grade - Student Book Spread_Page_60.png" alt="">
+                </div>
+                <div class="ph">
+                  <img src="img/Arabic - 4th Grade - Student Book Spread_Page_32.png" alt="">
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT: text + magazine mockup -->
+            <div class="col">
+              <div>
+                <div class="proj-title">Books and Magazines</div>
+                <div class="proj-meta">Print Layout Design <em>2024</em></div>
+                <p class="proj-desc">
+                  Collaborated with an artist to design and align visuals for a government school
+                  textbook. Focused on engaging layouts that make learning materials clear and fun for students. The
+                  second project was a themed magazine — I shot all photographs and designed the layout, with the theme
+                  of the color red.
+                </p>
+                <div class="tags">
+                  <span class="tag tc" title="Adobe InDesign">Id</span>
+                </div>
+              </div>
+
+              <div class="ph">
+                <img src="img/red-magazine-mockup.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="controls">
+            <div class="sec-stamp">GRAPHIC DESIGN</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════ PAGE 7 — GD: Personal Brand ════════ -->
+  <div class="page" id="page7">
+    <div class="page-wrap">
+      <div class="card">
+        <div class="ph-header">
+          <div class="ph-header-title">Graphic Design</div>
+          <div class="side-dots">
+            <div class="dot" onclick="go(4)">1</div>
+            <div class="dot" onclick="go(5)">2</div>
+            <div class="dot" onclick="go(6)">3</div>
+            <div class="dot act" onclick="go(7)">4</div>
+          </div>
+        </div>
+        <div class="ph-body">
+          <!-- Logo evolution -->
+          <div class="inset">
+            <div class="sec-label">Logo Evolution</div>
+            <div class="brand-evo">
+              <div class="evo-block">
+                <div class="evo-ph">
+                  <img src="img/logo-step-1.png" alt="">
+                </div>
+                <span>Sketched</span>
+              </div>
+              <div class="evo-arr">→</div>
+
+              <div class="evo-block">
+                <div class="evo-ph">
+                  <img src="img/logo-step-2.png" alt="">
+                </div>
+                <span>Defined</span>
+              </div>
+              <div class="evo-arr">→</div>
+
+              <div class="evo-block">
+                <div class="evo-ph">
+                  <img src="img/logo-step-3.svg" alt="">
+                </div>
+                <span>Rounded</span>
+              </div>
+              <div class="evo-arr">→</div>
+
+              <div class="evo-block">
+                <div class="evo-ph">
+                  <img src="img/logo-step-4.svg" alt="">
+                </div>
+                <span>Reshaped</span>
+              </div>
+              <div class="evo-arr">→</div>
+
+              <div class="evo-block">
+                <div class="evo-ph">
+                  <img src="img/logo-color.svg" alt="">
+                </div>
+                <span>Final</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gl">
+            <div class="col">
+              <div>
+                <div class="proj-title">Personal Brand</div>
+                <div class="proj-meta">Brand Identity <em>2024</em></div>
+                <p class="proj-desc">
+                  My personal brand identity features a funky, playful cat head, reflecting my
+                  creative side as a graphic designer and illustrator. I spent a lot of time picking the right
+                  colors to make it vibrant and fun. The logo went through several drafts to get the look just right.
+                </p>
+                <div class="tags">
+                  <span class="tag to" title="Adobe Illustrator">Ai</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col biz">
+              <div class="biz-ph">
+                <img src="img/onisa-bs-card-F.svg" alt="">
+              </div>
+              <div class="biz-ph">
+                <img src="img/onisa-bs-card-b.svg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="controls">
+            <div class="pg-n">7</div>
+            <div class="sec-stamp">GRAPHIC DESIGN</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════ PAGE 8 — Illustration: Random Characters ════════ -->
+  <div class="page" id="page8">
+    <div class="page-wrap">
+      <div class="card">
+        <div class="ph-header">
+          <div class="ph-header-title">Illustration</div>
+          <div class="side-dots">
+            <div class="dot act" onclick="go(8)">1</div>
+            <div class="dot" onclick="go(9)">2</div>
+            <div class="dot" onclick="go(10)">3</div>
+          </div>
+        </div>
+        <div class="ph-body">
+          <div class="gl">
+            <div class="col">
+              <div>
+                <div class="proj-title">Random Characters</div>
+                <div class="proj-meta">Character Design <em>2024</em></div>
+                <p class="proj-desc">
+                  A mix of my original characters, from sketches to full-color illustrations. Each
+                  one has their look and feel, showing different styles and fashion.
+                </p>
+              </div>
+
+              <div class="tags">
+                <span class="tag ts">Procreate</span>
+              </div>
+
+              <div class="sketch">
+                <img src="img/09.png" alt="a sketch of a boy">
+                <img src="img/03.png" alt="a sketch of a girl">
+              </div>
+            </div>
+
+            <div class="char-grid">
+              <div class="char-card">
+                <div class="ph">
+                  <img src="img/06.png" alt="">
+                </div>
+              </div>
+              <div class="char-card">
+                <div class="ph">
+                  <img src="img/07.png" alt="">
+                </div>
+              </div>
+              <div class="char-card">
+                <div class="ph">
+                  <img src="img/02.png" alt="">
+                </div>
+              </div>
+              <div class="char-card">
+                <div class="ph">
+                  <img src="img/08.png" alt="">
+                </div>
+              </div>
+              <div class="char-card">
+                <div class="ph">
+                  <img src="img/05.png" alt="">
+                </div>
+              </div>
+              <div class="char-card">
+                <div class="ph">
+                  <img src="img/04.png" alt="">
+                </div>
+              </div>
+              <div class="char-card">
+                <div class="ph">
+                  <img src="img/01.png" alt="">
+                </div>
+              </div>
+              <div class="char-card">
+                <div class="ph">
+                  <img src="img/10.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="controls">
+            <div class="pg-n">8</div>
+            <div class="sec-stamp">ILLUSTRATION</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════ PAGE 9 — Illustration: Storyboards ════════ -->
+  <div class="page" id="page9">
+    <div class="page-wrap">
+      <div class="card">
+        <div class="ph-header">
+          <div class="ph-header-title">Illustration</div>
+          <div class="side-dots">
+            <div class="dot" onclick="go(8)">1</div>
+            <div class="dot act" onclick="go(9)">2</div>
+            <div class="dot" onclick="go(10)">3</div>
+          </div>
+        </div>
+        <div class="ph-body">
+          <div class="gr">
+            <div class="sb-grid">
+              <div class="sb-p">
+                <img src="img/story-board01.png" alt="">
+              </div>
+              <div class="sb-p">
+                <img src="img/story-board09.png" alt="">
+              </div>
+              <div class="sb-p">
+                <img src="img/story-board04.png" alt="">
+              </div>
+              <div class="sb-p">
+                <img src="img/story-board03.png" alt="">
+              </div>
+              <div class="sb-p">
+                <img src="img/story-board07.png" alt="">
+              </div>
+              <div class="sb-p">
+                <img src="img/story-board10.png" alt="">
+              </div>
+              <div class="sb-p">
+                <img src="img/story-board11.png" alt="">
+              </div>
+              <div class="sb-p">
+                <img src="img/story-board12.png" alt="">
+              </div>
+            </div>
+
+            <div class="col">
+              <div>
+                <div class="proj-title">Storyboards Snippets</div>
+                <div class="proj-meta">Storyboard for Videos &amp; Comics <em>2024</em></div>
+                <p class="proj-desc">
+                  A peek into my storytelling process, key frames from various storyboards I've
+                  created. These snippets capture pivotal moments, showing how I plan compositions, camera angles, and
+                  scene transitions to bring narratives to life visually.
+                </p>
+              </div>
+              <div class="tags">
+                <span class="tag ts">Procreate</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="controls">
+            <div class="pg-n">9</div>
+            <div class="sec-stamp">ILLUSTRATION</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════ PAGE 10 — Illustration: Cat Language ════════ -->
+  <div class="page" id="page10">
+    <div class="page-wrap">
+      <div class="card">
+        <div class="ph-header">
+          <div class="ph-header-title">Illustration</div>
+          <div class="side-dots">
+            <div class="dot" onclick="go(8)">1</div>
+            <div class="dot" onclick="go(9)">2</div>
+            <div class="dot act" onclick="go(10)">3</div>
+          </div>
+        </div>
+        <div class="ph-body">
+          <div class="gl">
+            <div class="cl-poster-ph">
+              <img src="img/infographic.jpg" alt="">
+            </div>
+
+            <div class="col">
+              <div class="icon">
+                <img src="img/scared-cat.png" alt="a sketch of walking puffed cat over orange circle">
+              </div>
+
+              <div>
+                <div class="proj-title">Understanding Cat Language</div>
+                <div class="proj-meta">Infographic Poster &amp; Explainer Video <em>2025</em></div>
+                <p class="proj-desc">
+                  A playful series illustrating cat behaviors — ear twitches, tail flicks, and slow
+                  blinking. The same illustrated cats later starred in an explainer video I created, complete with
+                  motion graphics and my own voiceover narration.
+                </p>
+                <div class="tags">
+                  <span class="tag to" title="Adobe Illustrator">Ai</span>
+                  <span class="tag tn" title="Adobe After Effects">Ae</span>
+                </div>
+              </div>
+
+              <div class="vid-ph">
+                <a target="_blank" href="https://www.youtube.com/watch?v=7RZUwIr8R1I">
+                  <img src="img/video-thumbnail.svg" alt="">
+                  <svg class="play" viewBox="0 0 201.53 227.93">
+                    <path
+                      d="M193.74,100.47L23.37,2.11C12.98-3.89,0,3.61,0,15.6v196.73c0,11.99,12.98,19.49,23.37,13.49l170.37-98.36c10.39-6,10.39-20.99,0-26.99Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="controls">
+            <div class="pg-n">10</div>
+            <div class="sec-stamp">ILLUSTRATION</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════ PAGE 11 — Web: CSS Zen Garden ════════ -->
+  <div class="page" id="page11">
+    <div class="page-wrap">
+      <div class="card">
+        <div class="ph-header">
+          <div class="ph-header-title">Web Design</div>
+          <div class="side-dots">
+            <div class="dot act" onclick="go(11)">1</div>
+            <div class="dot" onclick="go(12)">2</div>
+            <div class="dot" onclick="go(13)">3</div>
+          </div>
+        </div>
+        <div class="ph-body">
+          <div class="gr">
+            <div class="col">
+              <div class="zen">
+                <img src="img/CSS_Zen-Garden-1.png" alt="">
+                <img src="img/CSS_Zen-Garden-2.png" alt="">
+              </div>
+              <div class="icon zicon hide">
+                <img src="img/zen.svg" alt="">
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="zen2">
+                <img src="img/wireframe.svg" alt="">
+              </div>
+
+              <div class="icon zicon normal">
+                <img src="img/zen.svg" alt="">
+              </div>
+
+              <div class="tags">
+                <span class="tag ts" title="Cascading Style Sheets">CSS</span>
+                <span class="tag to" title="Adobe Illustrator">Ai</span>
+              </div>
+
+              <div>
+                <div class="proj-title">CSS Zen Garden</div>
+                <div class="proj-meta">CSS-Only Redesign <em>2024</em></div>
+                <p class="proj-desc">
+                  My spin on the CSS Zen Garden challenge: taking the same HTML structure as everyone
+                  else and making it completely my own with custom CSS. This project shows how much you can transform a
+                  webpage with just styling, adding colors, illustrations and animation.
+                </p>
+                <div>
+                  <a target="_blank" href="https://onisa-gh.github.io/css-garden/" class="btn bto">Check it out
+                    here!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="controls">
+            <div class="pg-n">11</div>
+            <div class="sec-stamp">WEB DESIGN</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════ PAGE 12 — Web: Maplebrook Library ════════ -->
+  <div class="page" id="page12">
+    <div class="page-wrap">
+      <div class="card">
+        <div class="ph-header">
+          <div class="ph-header-title">Web Design</div>
+          <div class="side-dots">
+            <div class="dot" onclick="go(11)">1</div>
+            <div class="dot act" onclick="go(12)">2</div>
+            <div class="dot" onclick="go(13)">3</div>
+          </div>
+        </div>
+        <div class="ph-body">
+          <div class="gl">
+            <div class="col">
+              <div>
+                <div class="proj-title">Maplebrook Library</div>
+                <div class="proj-meta">Library Website <em>2024</em></div>
+                <p class="proj-desc">
+                  Built a responsive library website from scratch — HTML, CSS, and JavaScript
+                  interactions across 5 complete pages (Home, Programs, Events, About, Account). Designed an inviting
+                  interface with clean navigation to showcase how a modern library could operate online.
+                </p>
+                <div>
+                  <a target="_blank" href="https://onisa-gh.github.io/Mapelbrook-Public-Library/" class="btn bto">Check
+                    it out here!</a>
+                </div>
+                <div class="tags">
+                  <span class="tag to" title="Hypertext Markup Language">HTML</span>
+                  <span class="tag ts" title="Cascading Style Sheets">CSS</span>
+                  <span title="JavaScript" class="tag tc">JS</span>
+                </div>
+              </div>
+
+              <div class="maple">
+                <img src="img/maple-3.png" alt="">
+                <img src="img/maple-1.png" alt="">
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="maple lib">
+                <img src="img/maple-4.png" alt="">
+                <img src="img/maple-2.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="controls">
+            <div class="pg-n">12</div>
+            <div class="sec-stamp">WEB DESIGN</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════ PAGE 13 — Web: Ottawa Dog Rescue ════════ -->
+  <div class="page" id="page13">
+    <div class="page-wrap">
+      <div class="card">
+        <div class="ph-header">
+          <div class="ph-header-title">Web Design</div>
+          <div class="side-dots">
+            <div class="dot" onclick="go(11)">1</div>
+            <div class="dot" onclick="go(12)">2</div>
+            <div class="dot act" onclick="go(13)">3</div>
+          </div>
+        </div>
+        <div class="ph-body">
+          <div class="gl">
+            <div class="col">
+              <div class="inset odr">
+                <div class="sec-label">Brand Assets</div>
+                <div class="brands">
+                  <div class="brand" title="Sunray"></div>
+                  <div class="brand" title="Terra Cotta"></div>
+                  <div class="brand" title="Aquamarine"></div>
+                  <div class="brand" title="Linen"></div>
+                </div>
+
+                <div class="brand-evo">
+                  <div class="evo-block">
+                    <div class="evo-ph">
+                      <img src="img/ODR-Sketch.png" alt="">
+                    </div>
+                  </div>
+                  <div class="evo-arr">→</div>
+                  <div class="evo-block">
+                    <div class="evo-ph">
+                      <img src="img/ODR-Logo.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col thumb">
+                <img src="img/ODR-thumbnail.png" alt="">
+              </div>
+
+              <div class="tags">
+                <span class="tag tc">Figma</span>
+              </div>
+
+              <div>
+                <div class="proj-title">Ottawa Dog Rescue</div>
+                <div class="proj-meta">Website Redesign <em>2024</em></div>
+                <p class="proj-desc">
+                  Redesigned the entire website for this animal rescue NGO in Figma, creating a
+                  user-friendly interface tailored to their adoption process. Developed fully functional prototypes for
+                  both desktop and mobile, focusing on clear calls-to-action for donations, volunteer sign-ups, and pet
+                  adoptions.
+                </p>
+
+                <div class="web-btn">
+                  <a target="_blank"
+                    href="https://www.figma.com/proto/PJLsnFHl6pt2e1S90ihAiT/A02-Gharibeh-Onisa?node-id=1-4"
+                    class="btn">Check Desktop here!</a>
+                  <a target="_blank"
+                    href="https://www.figma.com/proto/PJLsnFHl6pt2e1S90ihAiT/A02-Gharibeh-Onisa?node-id=1-3"
+                    class="btn">Check Mobile here!</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="dog">
+              <img src="img/ODR-homepage.png" alt="">
+              <img src="img/ODR-Mb-homepage.png" alt="">
+            </div>
+          </div>
+
+          <div class="controls">
+            <div class="pg-n">13</div>
+            <div class="sec-stamp">WEB DESIGN</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════ PAGE 14 — CONTACT ════════ -->
+  <div class="page" id="page14">
+    <div class="page-wrap">
+      <div class="card">
+        <div class="ph-header">
+          <div class="ph-header-title">Contact</div>
+        </div>
+        <div class="ph-body">
+          <div class="contact-wrap">
+            <div class="contact-title">Reach Out</div>
+
+            <div class="contact-cat-ph">
+              <img src="img/cat-phone.svg" alt="">
+            </div>
+
+            <div class="contact-btns">
+              <input type="checkbox" id="toggleEmail" hidden>
+              <label for="toggleEmail" class="cb cb-br">Email</label>
+              <p class="email">onisa.gharaibeh@gmail.com</p>
+              <a href="https://www.linkedin.com/in/onisa-gh/" target="_blank" class="cb cb-bl">LinkedIn</a>
+              <a href="https://www.behance.net/OnisaGh" target="_blank" class="cb cb-sk">Behance</a>
+            </div>
+          </div>
+
+          <div class="controls">
+            <div class="pg-n">14</div>
+            <div class="sec-stamp">CONTACT</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
